@@ -55,3 +55,7 @@ In summary, our Garment and Swing Factory Optimization Software offers a holisti
 In a garments there are lots of styles are swing every time so it is very important to put the style in swing line very carefully. If we can run similar styles in a sequence than the swing efficiency will be increase and stable.
 suppose planer have some style they need to plan those style in swing line in that case if planer can pan the styles in most similar way than the efficiency will be all time increase.
 </h4>
+
+<h2>In a style there are lots of information :<h2>
+
+![alt text](../readmeimg/img2.png)
