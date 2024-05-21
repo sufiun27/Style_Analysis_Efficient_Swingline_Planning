@@ -60,3 +60,31 @@ suppose planer have some style they need to plan those style in swing line in th
 <br>
 
 ![alt text](./readmeimg/img2.png)
+
+A style has lots of  process each process describe the a part of full garments product like which part it is how you swing this, the needle size, machine type and so more. Like:
+<br>
+
+![alt text](./readmeimg/image3.png)
+
+<h2>Base on this  information’s  this software can show in depth comparison between two style :<h2>
+<br>
+
+![alt text](./readmeimg/image4.png)
+
+<p>here we can shoe the fully match , partially match and not match ratios , also show the manual process and other different types of processes. Also highlight that which process element does not match with reference style process.</p>
+
+<p> In the scenario of lots of style comparison situation it can generate similarity matching matrix where you can similarity percentage between lots of styles at a time : Like: </p>
+<br>
+
+![alt text](./readmeimg/image5.png)
+
+<br>
+
+![alt text](./readmeimg/image6.png)
+
+Suppose in a swing line already running a style called style 033-GG-00423, in that case if we can put the most similar style that will match with the running style than no need to change machine and worker can swing easily in that case efficiency will high.
+
+<b>Suppose in a line running style is 033-GG-00365 so put next the most similar style and put the most similar style with are previous one like:</b>
+<br>
+
+![alt text](./readmeimg/image7.png)
