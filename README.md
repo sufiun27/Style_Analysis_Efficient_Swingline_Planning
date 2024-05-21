@@ -57,5 +57,6 @@ suppose planer have some style they need to plan those style in swing line in th
 </h4>
 
 <h2>In a style there are lots of information :<h2>
+<br>
 
-![alt text](../readmeimg/img2.png)
+![alt text](./readmeimg/img2.png)
