@@ -88,3 +88,26 @@ Suppose in a swing line already running a style called style 033-GG-00423, in th
 <br>
 
 ![alt text](./readmeimg/image7.png)
+
+Than we can gain the height efficient output and efficiency curve will all time stable.also we can plane in multiple line by using this like:
+
+<br>
+
+![alt text](./readmeimg/image8.png)
+
+here we provide the line no and running style in that line, also provide the styles which we want to load between those line. This software will make the full planning by own.
+<br>
+
+![alt text](./readmeimg/image9.png)
+
+
+<p>So this software will help you to plan best efficient way and company will gain lots of profit by applying this software. It reduce the machin change over and increase the daily target production .</p>
+
+## Thank you.
+- if you need further more assist feel free to contract with me :
+- Abu Sufiun 
+- +88 01878000675
+- abusufiun27@gmail.com
+
+
+
