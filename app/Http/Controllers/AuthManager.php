@@ -18,8 +18,13 @@ class AuthManager extends Controller
 
         // dd($validatedData);
         $credentials = $request->only('email', 'password');
-
+        //dd($credentials);
         //login mathod
+        
+        // $hashedString = bcrypt('12345678');
+
+        // dd($hashedString);
+        
         if (auth()->attempt($credentials)) {
             $user = auth()->user();
 

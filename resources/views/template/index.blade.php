@@ -262,7 +262,7 @@
                  href="javascript:void(0)"
                  aria-expanded="false"
                  ><i class="mdi mdi-format-wrap-inline"></i
-                 ><span class="hide-menu">Style </span></a
+                 ><span class="hide-menu">Category </span></a
                >
                <ul aria-expanded="false" class="collapse first-level">
 
@@ -281,60 +281,14 @@
                  </li> --}}
 
                  <li class="sidebar-item">
-                  <a href="{{route('style.style')}}" class="sidebar-link">
-                    <i class="mdi">P D </i>
-                    <span class="hide-menu"> Processes Details </span></a
+                  <a href="{{route('home')}}" class="sidebar-link"> 
+                    {{-- {{route('style.style')}} --}}
+                    <i class="mdi">H M </i>
+                    <span class="hide-menu"> HOme </span></a
                   >
                </li>
 
-               <li class="sidebar-item">
-                <a href="{{route('style.styleCompare')}}" class="sidebar-link">
-                  <i class="mdi">C </i>
-                  <span class="hide-menu"> Comparison </span></a
-                >
-             </li>
-
-             
-             <li class="sidebar-item">
-              <a href="{{route('style.analysis')}}" class="sidebar-link">
-                <i class="mdi">M A </i>
-                <span class="hide-menu"> Matrix Analysis </span></a
-              >
-           </li>
-              {{--style.lineSimple--}}
-              <li class="sidebar-item">
-                <a href="{{route('style.lineSimple')}}" class="sidebar-link">
-                  <i class="mdi">S A</i>
-                  <span class="hide-menu"> Sequential Analysis </span></a
-                >
-             </li>
-
-
-
-
-           {{--style.line--}}
-           <li class="sidebar-item">
-            <a href="{{route('style.line')}}" class="sidebar-link">
-              <i class="mdi">H A </i>
-              <span class="hide-menu"> Heretical Analysis </span></a
-            >
-         </li>
-
-         {{-- //style.sequence --}}
-         <li class="sidebar-item">
-          <a href="{{route('style.sequence')}}" class="sidebar-link">
-            <i class="mdi">A H </i>
-            <span class="hide-menu"> All Heretical Analysis </span></a
-          >
-       </li>
-
-         {{-- //style.multiLine --}}
-         <li class="sidebar-item">
-          <a href="{{route('style.multiLine')}}" class="sidebar-link">
-            <i class="mdi">L S </i>
-            <span class="hide-menu"> Lines Wise Heretical Analysis </span></a
-          >
-       </li>
+               
 
 
                </ul>
@@ -342,37 +296,15 @@
            {{-- @endcan --}}
 
 
-           <li class="sidebar-item">
-            <a
-              class="sidebar-link has-arrow waves-effect waves-dark"
-              href="javascript:void(0)"
-              aria-expanded="false"
-              ><i class="mdi mdi-library-books"></i
-              ><span class="hide-menu">Language: {{ session('locale') }}</h4> </span></a
-            >
-            <ul aria-expanded="false" class="collapse first-level">
-
-            <li class="sidebar-item flex d-flex">
-                
-                <form class="sidebar-link" method="POST" action="{{ route('style.language', 'EN') }}">
-                  @csrf
-                  <button class="btn btn-success btn-sm" type="submit">EN</button>
-              </form>
-              
-                <form class="sidebar-link" method="POST" action="{{ route('style.language', 'CN') }}">
-                  @csrf
-                    <button class="btn btn-warning btn-sm" type="submit" > CN </button>
-                  {{-- <button class="btn btn-warning" type="submit">CN</button> --}}
-              </form>
-            </li>
+           
 
 
 
-            </ul>
-          </li>
+            {{-- </ul>
+          </li> --}}
      <!-- Employees//////////////////// -->
 
-               <!-- Employees//////////////////// -->
+               <!-- Employees//////////////////// have to enable this whenever setup it  --> 
                @can('policy', [App\Models\User::class, 'emp_manage'])
                <li class="sidebar-item">
                 <a
@@ -435,14 +367,14 @@
         <div class="bg-light">
           <div class="row">
               <div class="col text-end">
-                  <a href="{{route('dashboard')}}">Home</a> <span> &nbsp;&nbsp;&nbsp; </span>
-                  <a href="{{route('style.style')}}">Processes Details</a> <span> &nbsp;&nbsp;&nbsp; </span>
-                  <a href="{{route('style.styleCompare')}}">Comparison</a> <span> &nbsp;&nbsp;&nbsp; </span>
+                  <a href="{{route('dashboard')}}">Dashboard</a> <span> &nbsp;&nbsp;&nbsp; </span>
+                  <a href="{{route('home')}}">Home</a> <span> &nbsp;&nbsp;&nbsp; </span>
+                  {{-- <a href="{{route('style.styleCompare')}}">Comparison</a> <span> &nbsp;&nbsp;&nbsp; </span>
                   <a href="{{route('style.analysis')}}">Matrix Analysis</a> <span> &nbsp;&nbsp;&nbsp; </span>
                   <a href="{{route('style.lineSimple')}}">Sequential Analysis</a> <span> &nbsp; &nbsp;&nbsp; </span>
                   <a href="{{route('style.line')}}">Heretical Analysis</a> <span> &nbsp; &nbsp;&nbsp; </span>
                   <a href="{{route('style.sequence')}}">All Heretical Analysis</a> <span> &nbsp; &nbsp;&nbsp; </span>
-                  <a href="{{route('style.multiLine')}}">Lines Wise Heretical Analysis</a> <span> &nbsp; &nbsp;&nbsp; </span>
+                  <a href="{{route('style.multiLine')}}">Lines Wise Heretical Analysis</a> <span> &nbsp; &nbsp;&nbsp; </span> --}}
               </div>
           </div>
       </div>

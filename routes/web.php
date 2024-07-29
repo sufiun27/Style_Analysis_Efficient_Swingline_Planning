@@ -64,33 +64,8 @@ Route::prefix('employee')->group(function () {
 });
 
 
+////////////////////////////////////
 
-//Style/////////////////////
-use App\Http\Controllers\StyleController;
-Route::prefix('style')->middleware('auth')->group(function () {
-    Route::get('/style', [StyleController::class, 'style'])->name('style.style'); //Processes Details
-    Route::post('/styleData', [StyleController::class, 'styleDetails'])->name('style.styleData'); 
-    Route::get('/styleCompare', function(){ return view('style.styleCompare'); })->name('style.styleCompare'); //Comparison
-    Route::post('/compare', [StyleController::class, 'compare'])->name('style.compare');
-    Route::get('analysis', [StyleController::class, 'analysis'])->name('style.analysis'); //Analysis
-    Route::get('styleAnalysis', [StyleController::class, 'styleAnalysis'])->name('style.styleAnalysis');
-
-    Route::get('line', [StyleController::class, 'line'])->name('style.line'); //Heretical Analysis
-    Route::get('lineAnalysis', [StyleController::class, 'lineAnalysis'])->name('style.lineAnalysis');
-
-    Route::get('lineSimple', [StyleController::class, 'lineSimple'])->name('style.lineSimple');  //Sequential Analysis
-    Route::get('lineSimpleAnalysis', [StyleController::class, 'lineSimpleAnalysis'])->name('style.lineSimpleAnalysis');
-
-    Route::get('multiLine', [StyleController::class, 'multiLine'])->name('style.multiLine'); //Lines Wise Heretical Analysis
-    Route::get('multiLineAnalysis', [StyleController::class, 'multiLineAnalysis'])->name('style.multiLineAnalysis');
-
-    Route::get('sequence', [StyleController::class, 'sequence'])->name('style.sequence'); //All Heretical Analysis
-    Route::get('sequenceAnalysis', [StyleController::class, 'sequenceAnalysis'])->name('style.sequenceAnalysis');
-
-    Route::post('language/{language}', [StyleController::class, 'language'])->name('style.language');
-
-    Route::get('cache', [StyleController::class, 'cache'])->name('style.cache');
-
-    Route::get('notification', function(){ return view('notification'); })->name('style.notification');   //Notification
-
-});
+Route::get('/home', function(){
+    return view('home');
+})->name('home');
